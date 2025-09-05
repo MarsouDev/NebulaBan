@@ -3,14 +3,20 @@ fx_version 'cerulean'
 lua54 'yes'
 
 name 'NebulaBan'
-description 'A ban management resource for FiveM'
-author 'marsou13k'
+description 'A professional ban management resource for FiveM'
+author 'MarsouDev'
+version '2.0.0'
 repository 'https://github.com/MarsouDev/NebulaBan'
 
---shared_scripts {}
+shared_scripts {
+    'shared/config.lua',
+    'locales/*.lua',
+}
 
---server_scripts {}
-
---client_scripts {}
-
---files {}
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    'server/utils.lua',
+    'server/sv_main.lua',
+    'server/commands.lua',
+    'server/test.lua', -- Remove this line after testing
+}
