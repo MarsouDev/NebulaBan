@@ -8,12 +8,15 @@ author 'Marsou'
 repository 'https://github.com/Marsou/NebulaBan'
 
 shared_scripts {
+    '@ox_lib/init.lua',
+    'shared/logger.lua',
     'shared/main.lua',
 }
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
+    'server/dev.lua',
 }
 
 client_scripts {

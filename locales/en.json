@@ -1,0 +1,6 @@
+{
+    "ban_id_generated": "A new unique Ban ID has been generated: (^6%s^0)",
+    "ban_success": "Player (^2%s^0) has been banned for (^1%s^0) hours. Reason: (^3%s^0). Ban ID: (^6%s^0)",
+    "ban_failed_ids": "Failed to insert %s identifier into %s table for ban ID %s",
+    "ban_failed_tokens": "Failed to insert tokens into the database for Ban ID: (^6%s^0)"
+}
